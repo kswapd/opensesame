@@ -41,23 +41,15 @@
         </license>
     </licenses>
 
-    <distributionManagement>
-
-        <snapshotRepository>
-            <id>opensesame.snapshots.account</id>
-            <url>${opensesame_snapshots_distribution_repository}</url>
-        </snapshotRepository>
-
+   <distributionManagement>
         <repository>
-            <id>opensesame.releases.account</id>
-            <url>${opensesame_releases_distribution_repository}</url>
+            <id>nexus-releases</id>
+            <url>http://192.168.161.224:8889/nexus/content/repositories/Galaxy</url>
         </repository>
-
-        <site>
-            <id>opensesame.sites.account</id>
-            <url>${opensesame_sites_distribution_repository}</url>
-        </site>
-
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://192.168.161.224:8889/nexus/content/repositories/galaxy-shapashots</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <repositories>
